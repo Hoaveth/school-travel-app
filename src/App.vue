@@ -1,6 +1,8 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import TheNavigation from '@/components/TheNavigation.vue'
+
+let route = useRoute()
 </script>
 
 <template>
@@ -11,6 +13,6 @@ import TheNavigation from '@/components/TheNavigation.vue'
   </header>
 
   <div class="container">
-    <RouterView />
+    <RouterView :key="route.path" />
   </div>
 </template>
