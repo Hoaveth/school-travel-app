@@ -13,7 +13,7 @@ let data = ref(sourceData)
       <RouterLink
         v-for="destination in data.destinations"
         :key="destination.id"
-        :to="`/${destination.slug}`"
+        :to="{ name: 'destination.show', params: { id: destination.id, slug: destination.slug } }"
         class="link"
       >
         <h2>{{ destination.name }}</h2>
