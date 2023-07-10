@@ -8,6 +8,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <div id="nav">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/brazil">Brazil</RouterLink>
+        <RouterLink to="/hawaii">Hawaii</RouterLink>
+        <RouterLink to="/jamaica">Jamaica</RouterLink>
       </div>
     </div>
   </header>
